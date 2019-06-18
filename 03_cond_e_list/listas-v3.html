@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<script src="../libs/vue_2.6.10.js"></script>
+
+<div id="app">
+
+  <ul>
+    <li v-for="(cor, idx) in cores">{{ idx+1 }}) {{ cor }}</li>
+  </ul>
+
+  <hr>
+  <h2>TEMPLATE</h2>
+  <template v-for="(cor, idx) in cores">
+    <h3>{{ cor }}</h3>
+    <p>{{ idx }}</p>
+  </template>
+
+  <hr>
+  <h2>DIV</h2>
+  <div v-for="(cor, idx) in cores">
+    <h3>{{ cor }}</h3>
+    <p>{{ idx }}</p>
+  </div>
+
+  <hr>
+  <ul>
+    <li v-for="pessoa in pessoas">
+      <div v-for="(valor, chave, idx) in pessoa">
+        {{ chave }} = {{ valor }} ({{ idx+1 }})
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+<style>
+  h3, p {
+    display: inline;
+  }
+</style>
+
+<script>
+  new Vue( {
+    el: '#app',
+    data: {
+      cores: [ 'vermelho', 'verde', 'amarelo', 'azul' ],
+      pessoas: [
+        { nome: 'Ana', idade: 26, peso: 59 },
+        { nome: 'Guilherme', idade: 22, peso: 89 }
+      ]
+    },
+  } )
+</script>
