@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #03</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style from="css/tag.css">
+      body {
+        font-size: 40px;
+      }
+
+      ul, ol {
+        padding: 0;
+      }
+
+      li {
+        margin-left: 60px;
+      }
+
+      .tag {
+        border: solid 4px;
+        margin: 5px;
+      }
+
+      .tag label {
+        color: #fff;
+        font-size: 25px;
+        vertical-align: top;
+        margin-right: 10px;
+        padding: 0px 5px 3px 3px;
+      }
+    </style>
+
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        grid-area: cabecalho;
+      }
+
+      nav {
+        grid-area: navegacao;
+      }
+
+      main {
+        grid-area: conteudo;
+      }
+
+      footer {
+        grid-area: rodape;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: 'cabecalho cabecalho' 'navegacao conteudo' 'rodape rodape';
+      }
+
+      @media (max-width: 700px) {
+        body {
+          grid-template-columns: 1fr;
+          grid-template-rows: 80px 1fr 100px;
+          grid-template-areas: 'navegacao' 'conteudo' 'rodape';
+        }
+
+        header {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="tag">CONTEÚDO</main>
+    <header class="tag">CABEÇALHO</header>
+    <footer class="tag">RODAPÉ</footer>
+    <nav class="tag">NAVEGAÇÃO</nav>
+
+    <script from="js/tag.js">
+      const colors = {
+        p: '#388e3c',
+        div: '#1565c0',
+        span: '#e53935',
+        section: '#f67809',
+        ul: '#5e35b1',
+        ol: '#fbc02d',
+        header: '#d81b60',
+        nav: '#64dd17',
+        main: '#00acc1',
+        footer: '#304ffe',
+        form: '#9f6581',
+        body: '#25b6da',
+        padrao: '#616161',
+        get ( tag ) {
+          return this[ tag ] ? this[ tag ] : this.padrao
+        }
+      }
+
+      document.querySelectorAll( '.tag' ).forEach( elemento => {
+        const tagName = elemento.tagName.toLowerCase()
+
+        elemento.style.borderColor = colors.get( tagName )
+
+        if ( !elemento.classList.contains( 'nolabel' ) ) {
+          const label = document.createElement( 'label' )
+          label.style.backgroundColor = colors.get( tagName )
+          label.innerHTML = tagName
+          elemento.insertBefore( label, elemento.childNodes[ 0 ] )
+        }
+      } )
+    </script>
+  </body>
+
+</html>
