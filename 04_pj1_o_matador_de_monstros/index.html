@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pj #1 - O Matador de Monstros</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <script src="../libs/vue_2.6.10.js"></script>
+  </head>
+  <body>
+    <div id="app">
+
+      <div class="panel scores">
+        <div class="score">
+          <h1>Jogador</h1>
+          <div class="life-bar">
+            <div
+              class="life"
+              :class="{ danger: playerLife < 20 }"
+              :style="{ width: playerLife + '%' }"
+            ></div>
+          </div>
+          <div>{{ playerLife }}%</div>
+        </div>
+        <div class="score">
+          <h1>Monstro</h1>
+          <div class="life-bar">
+            <div
+              class="life"
+              :class="{ danger: monsterLife < 20 }"
+              :style="{ width: monsterLife + '%' }"
+            ></div>
+          </div>
+          <div>{{ monsterLife }}%</div>
+        </div>
+      </div>
+
+      <div
+        v-if="hasResult"
+        class="panel result">
+        <div v-if=" monsterLife === 0 " class="win">Vc Ganhou!!! :)</div>
+        <div v-else class="lose">Vc Perdeu! :(</div>
+      </div>
+
+      <div class="panel buttons">
+        <template v-if="running">
+          <div class="btn attack" @click="attack(false)">Ataque</div>
+          <div class="btn especial-attack" @click="attack(true)">Ataque Especial</div>
+          <div class="btn heal" @click="healAndHurt">Curar</div>
+          <div class="btn give-up" @click="quitGame">Desistir</div>
+        </template>
+        <div v-else class="btn new-game" @click="startGame">Iniciar Jogo</div>
+      </div>
+
+      <div
+        class="panel logs"
+        v-if="logs.length">
+        <ul>
+          <li
+            v-for="log in logs"
+            :class="log.cls">
+            {{ log.text }}
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
