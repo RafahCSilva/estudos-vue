@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<script src="../libs/vue_2.6.10.js"></script>
+
+<div id="app">
+  <h1>{{ titulo }}</h1>
+  <button @click="titulo += '#' ">Alterar Titulo</button>
+  <button @click="$destroy()">Destruir</button>
+</div>
+<script>
+  const vm = new Vue( {
+    el: '#app',
+    data: {
+      titulo: 'Ciclo de Vida',
+    },
+
+    beforeCreate () {
+      console.log( 'Antes de Criar' )
+    },
+    created () {
+      console.log( 'Criado' )
+    },
+
+    beforeMount () {
+      console.log( 'Antes de Montar' )
+    },
+    mounted () {
+      console.log( 'Montado' )
+    },
+
+    beforeUpdate () {
+      console.log( 'Antes de Update' )
+    },
+    updated () {
+      console.log( 'Updated' )
+    },
+
+    beforeDestroy () {
+      console.log( 'Antes de Destruir' )
+    },
+    destroyed () {
+      console.log( 'Destroyed' )
+    }
+  } )
+</script>

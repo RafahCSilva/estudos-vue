@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script src="../libs/vue_2.6.10.js"></script>
+
+<div id="app"></div>
+<script>
+  const vm = new Vue( {
+    template: `
+      <div>
+        <h1 ref="aulaRef">{{ aula }}</h1>
+        <h2>{{ modulo }}</h2>
+        <button @click="alterarAula">Alterar Aula</button>
+        <button @click="alterarModulo">Alterar Módulo</button>
+      </div>
+    `,
+    data: {
+      aula: 'Aula: usando refs',
+      modulo: 'Módulo: Instancia Vue'
+    },
+    methods: {
+      alterarAula () {
+        this.aula += '#'
+        console.log( this.$refs.aulaRef.innerText )
+      },
+      alterarModulo () {
+        this.modulo += '#'
+      }
+    },
+  } )
+
+
+  // vm.$mount( '#app' )
+  vm.$mount()
+  document.querySelector( '#app' ).appendChild( vm.$el )
+</script>

@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script src="../libs/vue_2.6.10.js"></script>
+
+<div id="app">
+  <comp></comp>
+  <comp></comp>
+  <comp></comp>
+</div>
+<script>
+  Vue.component( 'comp', {
+    // template: '<h1>Componente</h1>'
+    template: `
+      <div>
+        <h1>{{ aula }}</h1>
+        <h2>{{ modulo }}</h2>
+        <button @click="alterarAula">Alterar Aula</button>
+        <button @click="alterarModulo">Alterar Módulo</button>
+      </div>
+    `,
+    data: function () {
+      return {
+        aula: 'Aula: usando refs',
+        modulo: 'Módulo: Instancia Vue'
+      }
+    },
+    methods: {
+      alterarAula () {
+        this.aula += '#'
+      },
+      alterarModulo () {
+        this.modulo += '#'
+      }
+    },
+  } )
+  const vm = new Vue( {
+    el: '#app',
+  } )
+</script>
