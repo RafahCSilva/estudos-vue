@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script src="../libs/vue_2.6.10.js"></script>
+<div id="app1">
+  <CONTADOR1></CONTADOR1>
+  <Contador1></Contador1>
+  <contadoR1></contadoR1>
+</div>
+<hr>
+<div id="app2">
+  <app-contador></app-contador>
+  <app-contador></app-contador>
+  <app-contador></app-contador>
+</div>
+<script>
+  // Registro Global
+  const contador = {
+    template: `
+      <div>
+        {{ contador }}
+        <button @click="contador++">+</button>
+        <button @click="contador--">-</button>
+      </div>`,
+    data () { return { contador: 0 }},
+  }
+  new Vue( {
+    el: '#app1',
+    // Registro Local
+    components: { 'contador1': contador }
+  } )
+  new Vue( {
+    el: '#app2',
+    // Registro Local
+    components: { 'app-contador': contador }
+  } )
+</script>

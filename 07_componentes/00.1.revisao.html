@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script src="../libs/vue_2.6.10.js"></script>
+<div id="app">
+  {{ contador }}
+  <button @click="contador++">+</button>
+  <button @click="contador--">-</button>
+</div>
+<script>
+  new Vue( {
+    el: '#app',
+    data: { contador: 0 },
+  } )
+</script>

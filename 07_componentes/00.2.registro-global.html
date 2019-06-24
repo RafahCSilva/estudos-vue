@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script src="../libs/vue_2.6.10.js"></script>
+<div id="app">
+  <CONTADOR></CONTADOR>
+  <Contador></Contador>
+  <contadoR></contadoR>
+</div>
+<script>
+  // Registro Global
+  Vue.component( 'contador', {
+    template: `
+      <div>
+        {{ contador }}
+        <button @click="contador++">+</button>
+        <button @click="contador--">-</button>
+      </div>`,
+    data () { return { contador: 0 }},
+  } )
+  new Vue( {
+    el: '#app',
+  } )
+</script>
