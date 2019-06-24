@@ -52,4 +52,9 @@
     flex-direction: column;
     align-items: center;
   }
+
+  h1 {
+    /* Vem por ultimo, entao H1 ficara green */
+    color: green;
+  }
 </style>
