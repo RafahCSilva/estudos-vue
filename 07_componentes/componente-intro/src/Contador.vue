@@ -1,8 +1,8 @@
 <template>
-<div class="contador">
-   <span>{{ contador }}</span>
-  <button @click="contador++">+</button>
-  <button @click="contador--">-</button>
+  <div class="contador">
+    <span>{{ contador }}</span>
+    <button @click="contador++">+</button>
+    <button @click="contador--">-</button>
   </div>
 </template>
 
