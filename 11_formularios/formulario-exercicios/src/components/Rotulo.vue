@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    props: [ 'nome' ]
+    props: [ 'nome' ],
   }
 </script>
 
@@ -20,6 +20,10 @@
     align-items: flex-start;
     margin: 15px 0px;
     font-size: 1.4rem;
+  }
+
+  .rotulo label {
+    font-weight: bold;
   }
 
   .elemento {
