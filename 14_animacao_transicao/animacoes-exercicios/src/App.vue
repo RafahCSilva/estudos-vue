@@ -39,6 +39,24 @@
       <b-alert variant="warning" show v-else key="warn">{{ msg }}</b-alert>
     </transition>
 
+
+    <hr>
+    <button @click="exibir2 = !exibir2">Alternar</button>
+    <transition
+      :css="false"
+      @before-enter="beforeEnter"
+      @enter="enter"
+      @after-enter="afterEnter"
+      @enter-cancelled="enterCancelled"
+
+      @before-leave="beforeLeave"
+      @leave="leave"
+      @after-leave="afterLeave"
+      @leave-cancelled="leaveCancelled"
+    >
+      <div v-if="exibir2" class="caixa"></div>
+    </transition>
+
   </div>
 </template>
 
@@ -49,7 +67,61 @@
         msg: 'Uma mensagem de informação para o usuario!',
         exibir: false,
         tipoAnimacao: 'fade',
+
+        exibir2: true,
+        larguraBase: 0,
       }
+    },
+    methods: {
+      beforeEnter( el ) {
+        console.log( 'beforeEnter' )
+        this.larguraBase = 0
+        el.style.width = `${ this.larguraBase }px`
+      },
+      enter( el, done ) {
+        console.log( 'enter' )
+        let rodada = 1
+        let temporizador = setInterval( () => {
+          const novaLargura = this.larguraBase + rodada * 10
+          el.style.width = `${ novaLargura }px`
+          rodada++
+          if ( rodada > 30 ) {
+            clearInterval( temporizador )
+            done()
+          }
+        }, 20 )
+      },
+      afterEnter( el ) {
+        console.log( 'afterEnter' )
+      },
+      enterCancelled( el ) {
+        console.log( 'enterCancelled' )
+      },
+      beforeLeave( el ) {
+        console.log( 'beforeLeave' )
+        this.larguraBase = 300
+        el.style.width = `${ this.larguraBase }px`
+      },
+      leave( el, done ) {
+        console.log( 'leave' )
+        let rodada = 1
+        let temporizador = setInterval( () => {
+          const novaLargura = this.larguraBase - rodada * 10
+          el.style.width = `${ novaLargura }px`
+          rodada++
+          if ( rodada > 30 ) {
+            clearInterval( temporizador )
+            done()
+          }
+        }, 20 )
+      },
+      afterLeave( el ) {
+        console.log( 'afterLeave' )
+      },
+      leaveCancelled( el ) {
+        console.log( 'leaveCancelled' )
+      },
+
     },
   }
 </script>
@@ -116,5 +188,14 @@
     &-leave-active {
       transition: opacity 1s;
     }
+  }
+
+
+  /* CAIXA */
+  .caixa {
+    height: 100px;
+    width: 300px;
+    margin: 30px auto;
+    background-color: lightgreen;
   }
 </style>
