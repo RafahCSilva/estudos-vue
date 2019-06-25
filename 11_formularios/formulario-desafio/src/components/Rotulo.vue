@@ -22,6 +22,10 @@
     font-size: 1.4rem;
   }
 
+  .rotulo label {
+    font-weight: bold;
+  }
+
   .elemento {
     display: flex;
     align-self: stretch;
@@ -36,7 +40,6 @@
     border-radius: 5px;
     padding: 5px 10px;
   }
-
 
   input:focus {
     border: 1px solid #BBB;
