@@ -57,11 +57,34 @@
       <div v-if="exibir2" class="caixa"></div>
     </transition>
 
+
+    <hr>
+    <div class="mb-4">
+      <b-button
+        variant="info" class="mr-2"
+        @click="componenteSelecionado = 'AlertaInfo'">
+        Info
+      </b-button>
+      <b-button
+        variant="warning"
+        @click="componenteSelecionado = 'AlertaAdvertencia'">
+        Warn
+      </b-button>
+    </div>
+    <transition name="fade" mode="out-in">
+      <component :is="componenteSelecionado"></component>
+    </transition>
+
+
   </div>
 </template>
 
 <script>
+  import AlertaAdvertencia from './AlertaAdvertencia'
+  import AlertaInfo from './AlertaInfo'
+
   export default {
+    components: { AlertaAdvertencia, AlertaInfo },
     data() {
       return {
         msg: 'Uma mensagem de informação para o usuario!',
@@ -70,6 +93,8 @@
 
         exibir2: true,
         larguraBase: 0,
+
+        componenteSelecionado: ''
       }
     },
     methods: {
