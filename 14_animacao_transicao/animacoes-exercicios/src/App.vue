@@ -18,6 +18,16 @@
     <transition name="slide" type="animation" appear>
       <b-alert variant="info" show v-if="true">{{ msg }}</b-alert>
     </transition>
+
+    <hr>
+
+    <transition
+      enter-active-class="animated bounce"
+      leave-active-class="animated shake"
+    >
+      <b-alert variant="info" show v-show="exibir">{{ msg }}</b-alert>
+    </transition>
+
   </div>
 </template>
 
