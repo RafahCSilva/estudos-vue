@@ -76,6 +76,17 @@
     </transition>
 
 
+    <hr>
+    <b-button variant="success" @click="adicionarAluno">Adicionar Aluno</b-button>
+    <b-list-group>
+      <transition-group name="fade" tag="div">
+        <b-list-group-item
+          v-for="(aluno, idx) in alunos" :key="aluno"
+          @click="removeAluno(idx)"
+        >{{ aluno }}
+        </b-list-group-item>
+      </transition-group>
+    </b-list-group>
   </div>
 </template>
 
@@ -94,10 +105,20 @@
         exibir2: true,
         larguraBase: 0,
 
-        componenteSelecionado: ''
+        componenteSelecionado: '',
+
+        alunos: [ 'Roberto', 'Julia', 'Teresa', 'Paulo' ],
       }
     },
     methods: {
+      adicionarAluno() {
+        const s = Math.random().toString( 36 ).substring( 2 )
+        this.alunos.push( s )
+      },
+      removeAluno( indice ) {
+        this.alunos.splice( indice, 1 )
+      },
+
       beforeEnter( el ) {
         console.log( 'beforeEnter' )
         this.larguraBase = 0
