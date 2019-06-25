@@ -3,6 +3,7 @@
     <h1>Filtros & Mixins</h1>
     <hr>
     <p>{{ usuarioLogado }}</p>
+    <p>{{ global }}</p>
     <p>{{ u_cpf | f_cpf | f_inverter }}</p>
     <p>{{ u_cpf | f_inverter }}</p>
     <p>{{ 'ASDFG' | f_inverter }}</p>
@@ -29,6 +30,10 @@
   export default {
     components: { Frutas },
     mixins: [ FrutasMixin, usuarioMixin ],
+
+    created() {
+      console.log( 'Created - app.vue' )
+    },
     data() {
       return {
         u_cpf: '12312312300',

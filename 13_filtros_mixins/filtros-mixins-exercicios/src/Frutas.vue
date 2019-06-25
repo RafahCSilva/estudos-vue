@@ -8,8 +8,11 @@
 </template>
 
 <script>
+  import usuarioMixin from './usuarioMixin'
+
   export default {
     name: 'Frutas',
+    mixins: [ usuarioMixin ],
     data() {
       return {
         fruta: '',
@@ -21,6 +24,9 @@
         this.frutas.push( this.fruta )
         this.fruta = ''
       },
+    },
+    created() {
+      console.log( 'Created - frutas.vue' )
     },
   }
 </script>
