@@ -8,14 +8,26 @@
       params: { id },
       hash: '#rodape',
       query: { completo: true, lingua: 'en' }
-     }">Editar Named</router-link>
+     }">Editar Named
+    </router-link>
   </div>
 </template>
 
 <script>
   export default {
     name: 'UsuarioShow',
-    props: ['id']
+    beforeRouteEnter( to, from, next ) {
+      console.log( 'dentro do component -> usuario.show' )
+      next()
+
+      // pegar atrr a VM
+      // next( ( vm ) => { console.log( vm.id ) } )
+
+      // exemplo de de validacao
+      // const autenticado = false
+      // autenticado ? next() : next( false )
+    },
+    props: [ 'id' ]
   }
 </script>
 
