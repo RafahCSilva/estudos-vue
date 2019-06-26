@@ -1,6 +1,12 @@
 <template>
   <div id="app" class="container">
     <h1>HTTP com Axios</h1>
+    <b-alert
+      show dismissible
+      v-for="mensagem in mensagens" :key="mensagem.texto"
+      :variant="mensagem.tipo">
+      {{ mensagem.texto }}
+    </b-alert>
     <b-card>
       <b-form-group label="Nome:">
         <b-form-input
@@ -49,6 +55,7 @@
   export default {
     data() {
       return {
+        mensagens: [],
         usuario: {
           nome: '',
           email: '',
@@ -63,6 +70,7 @@
         this.usuario.nome = ''
         this.usuario.email = ''
         this.id = null
+        this.mensagens = []
       },
       salvar() {
         console.log( this.usuario )
@@ -71,7 +79,13 @@
         const finalUrl = this.id ? `/${ this.id }.json` : '.json'
         this
           .$http[ metodo ]( 'usuarios' + finalUrl, this.usuario )
-          .then( () => this.limpar() )
+          .then( () => {
+            this.limpar()
+            this.mensagens.push( {
+              texto: 'Salvo com sucesso',
+              tipo: 'success'
+            } )
+          } )
       },
       obterUsuarios() {
         this.$http.get( 'usuarios.json' )
@@ -88,7 +102,19 @@
       deletarUsuario( id ) {
         this.$http
             .delete( `usuarios/${ id }.json` )
-            .then( () => this.obterUsuarios() )
+            .then( () => {
+              this.obterUsuarios()
+              this.mensagens.push( {
+                texto: 'Deletado com sucesso',
+                tipo: 'success'
+              } )
+            } )
+            .catch( ( err ) => {
+              this.mensagens.push( {
+                texto: 'Erro ao Deletar',
+                tipo: 'danger'
+              } )
+            } )
       }
     },
   }
