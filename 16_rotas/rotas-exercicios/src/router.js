@@ -13,9 +13,9 @@ export default new Router( {
       component: Inicio
     },
     {
-      path: '/usuario',
-      component: Usuario
-
+      path: '/usuario/:id',
+      component: Usuario,
+      props: true // passa uma props pro componente, assim nao precisa de watch
     }
   ]
 } )
