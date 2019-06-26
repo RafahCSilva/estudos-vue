@@ -34,7 +34,7 @@
           v-for="(usuario, id) in usuarios"
           :key="id">
           <strong>ID: </strong>{{ usuario.id }} <br>
-          <strong>Nome: </strong>{{ usuario.name }} <br>
+          <strong>Nome: </strong>{{ usuario.nome }} <br>
           <strong>E-mail: </strong>{{ usuario.email }}
         </b-list-group-item>
       </b-list-group>

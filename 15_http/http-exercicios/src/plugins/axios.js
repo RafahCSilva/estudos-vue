@@ -2,10 +2,23 @@ import Vue from 'vue'
 import axios from 'axios'
 
 // Config global (e unico)
-axios.defaults.baseURL = 'https://curso-vue-3be10.firebaseio.com/'
+// axios.defaults.baseURL = 'https://curso-vue-3be10.firebaseio.com/'
+// axios.defaults.headers.common[ 'Authorization' ] = 'abc123'
+// axios.defaults.headers.get[ 'Accepts' ] = 'application/json'
+// Vue.use( {
+//   install( Vue ) {
+//     Vue.prototype.$http = axios
+// } )
+
+// Config para cada instancia ($http_testeA, $http_testeB, ...)
 Vue.use( {
   install( Vue ) {
-    Vue.prototype.$http = axios
+    Vue.prototype.$http = axios.create( {
+      baseURL: 'https://curso-vue-3be10.firebaseio.com/',
+      headers: {
+        'Authorization': 'abc123'
+      }
+    } )
 
     // Interceptar Requisicao
     Vue.prototype.$http.interceptors.request.use( ( config ) => {
@@ -33,12 +46,3 @@ Vue.use( {
       ( error ) => { Promise.reject( error ) } )
   }
 } )
-
-// Config para cada instancia ($http_testeA, $http_testeB, ...)
-// Vue.use( {
-//   install( Vue ) {
-//     Vue.prototype.$http_testeA = axios.create( {
-//       baseURL: 'https://curso-vue-3be10.firebaseio.com/'
-//     } )
-//   }
-// } )
