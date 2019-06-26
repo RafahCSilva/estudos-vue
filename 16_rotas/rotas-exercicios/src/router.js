@@ -14,6 +14,7 @@ export default new Router( {
   routes: [
     {
       path: '/',
+      name: 'inicio',
       component: Inicio
     },
     {
@@ -23,7 +24,7 @@ export default new Router( {
       children: [
         { path: '', component: UsuarioIndex },
         { path: ':id', component: UsuarioShow, props: true, },
-        { path: ':id/edit', component: UsuarioEdit, props: true, }
+        { path: ':id/edit', component: UsuarioEdit, props: true, name: 'usuariosEdit' }
       ]
     }
   ]
