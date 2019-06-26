@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: 'Menu'
+    name: 'MenuAlt'
   }
 </script>
 

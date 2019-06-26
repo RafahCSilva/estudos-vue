@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Inicio from './components/Inicio'
 
-import Usuario from './components/usuario/Usuario'
-import UsuarioIndex from './components/usuario/UsuarioIndex'
-import UsuarioShow from './components/usuario/UsuarioShow'
-import UsuarioEdit from './components/usuario/UsuarioEdit'
-import Menu from './components/template/Menu'
-import MenuAlt from './components/template/MenuAlt'
+// import Inicio from './components/Inicio'
+// import Usuario from './components/usuario/Usuario'
+// import UsuarioIndex from './components/usuario/UsuarioIndex'
+// import UsuarioShow from './components/usuario/UsuarioShow'
+// import UsuarioEdit from './components/usuario/UsuarioEdit'
+// import Menu from './components/template/Menu'
+// import MenuAlt from './components/template/MenuAlt'
 
 Vue.use( Router )
+
+const Inicio = () => import( './components/Inicio'  )
+const Usuario = () => import( /* webpackChunkName: "usuario" */ './components/usuario/Usuario' )
+const UsuarioIndex = () => import( /* webpackChunkName: "usuario" */ './components/usuario/UsuarioIndex' )
+const UsuarioShow = () => import( /* webpackChunkName: "usuario" */ './components/usuario/UsuarioShow' )
+const UsuarioEdit = () => import( /* webpackChunkName: "usuario" */ './components/usuario/UsuarioEdit' )
+const Menu = () => import( './components/template/Menu' )
+const MenuAlt = () => import( './components/template/MenuAlt' )
 
 const router = new Router( {
   mode: 'history', // ou 'hash',
