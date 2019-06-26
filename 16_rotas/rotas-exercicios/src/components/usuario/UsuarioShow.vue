@@ -1,0 +1,18 @@
+<template>
+  <div class="usuario-detalhe">
+    <h3>Usuario Detalhe</h3>
+    <p><strong>Código:</strong> {{ id }}</p>
+    <router-link tag="button" primario :to="`/usuario/${id}/edit`">Editar</router-link>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'UsuarioShow',
+    props: ['id']
+  }
+</script>
+
+<style scoped>
+
+</style>

@@ -2,8 +2,9 @@
   <div class="usuario">
     <h2>Usuário</h2>
     <hr>
-    <p><strong>Código:</strong> {{ id }}</p>
-    <button success @click="irParaInicio">&lt;Voltar</button>
+    <router-view />
+
+    <button sucesso @click="irParaInicio">&lt;Voltar</button>
   </div>
 </template>
 
