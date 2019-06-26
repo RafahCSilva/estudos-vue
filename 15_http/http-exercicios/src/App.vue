@@ -31,11 +31,14 @@
       <hr>
       <b-list-group>
         <b-list-group-item
-          v-for="(usuario, id) in usuarios"
+          v-for="(usuario, idx) in usuarios"
           :key="id">
           <strong>ID: </strong>{{ usuario.id }} <br>
           <strong>Nome: </strong>{{ usuario.nome }} <br>
           <strong>E-mail: </strong>{{ usuario.email }}
+
+          <b-button variant="warning" @click="editarUsuario( idx )">Editar</b-button>
+          <b-button variant="danger" @click="deletarUsuario( usuario.id )">Deletar</b-button>
         </b-list-group-item>
       </b-list-group>
     </b-card>
@@ -48,21 +51,27 @@
       return {
         usuario: {
           nome: '',
-          email: ''
+          email: '',
+          id: ''
         },
-        usuarios: []
+        usuarios: [],
+        id: null
       }
     },
     methods: {
+      limpar() {
+        this.usuario.nome = ''
+        this.usuario.email = ''
+        this.id = null
+      },
       salvar() {
         console.log( this.usuario )
-        this.$http
-            .post( 'usuarios.json', this.usuario )
-            .then( ( res ) => {
-              console.log( res )
-              this.usuario.nome = ''
-              this.usuario.email = ''
-            } )
+
+        const metodo = this.id ? 'patch' : 'post'
+        const finalUrl = this.id ? `/${ this.id }.json` : '.json'
+        this
+          .$http[ metodo ]( 'usuarios' + finalUrl, this.usuario )
+          .then( () => this.limpar() )
       },
       obterUsuarios() {
         this.$http.get( 'usuarios.json' )
@@ -70,6 +79,16 @@
               this.usuarios = res.data
               console.log( 'Usuarios:', this.usuarios )
             } )
+      },
+      editarUsuario( idx ) {
+        this.id = this.usuarios[ idx ].id
+        console.log( this.usuarios[ idx ] )
+        this.usuario = { ...this.usuarios[ idx ] }
+      },
+      deletarUsuario( id ) {
+        this.$http
+            .delete( `usuarios/${ id }.json` )
+            .then( () => this.obterUsuarios() )
       }
     },
   }
