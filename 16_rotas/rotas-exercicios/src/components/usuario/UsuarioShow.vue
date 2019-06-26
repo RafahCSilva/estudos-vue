@@ -4,9 +4,10 @@
     <p><strong>Código:</strong> {{ id }}</p>
     <router-link tag="button" primario :to="`/usuario/${id}/edit`">Editar Url</router-link>
     <router-link tag="button" primario :to="{
-     name: 'usuariosEdit',
-     params: { id },
-     query: { completo: true, lingua: 'en' }
+      name: 'usuariosEdit',
+      params: { id },
+      hash: '#rodape',
+      query: { completo: true, lingua: 'en' }
      }">Editar Named</router-link>
   </div>
 </template>
