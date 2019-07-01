@@ -22,10 +22,10 @@
     },
     computed: {
       quantidade() {
-        return this.$store.state.quantidade
+        return this.$store.state.parametros.quantidade
       },
       preco() {
-        return this.$store.state.preco
+        return this.$store.state.parametros.preco
       }
     },
     methods: {
@@ -39,7 +39,7 @@
         this.sequencia++
 
         // acesso direto ao store
-        // this.$store.state.produtos.push( produto )
+        // this.$store.state.carrinho.produtos.push( produto )
 
         // acesso via Mutation
         // this.$store.commit( 'adicionarProduto', produto )
