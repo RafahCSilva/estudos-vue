@@ -12,6 +12,8 @@
 
 <script>
 
+  import { mapMutations } from 'vuex'
+
   export default {
     data() {
       return {
@@ -32,8 +34,11 @@
         // eslint-disable-next-line
         console.log( produto )
 
-        this.$store.state.produtos.push( produto )
-      }
+        // this.$store.state.produtos.push( produto )
+        // this.$store.commit( 'adicionarProduto', produto )
+        this.adicionarProduto( produto )
+      },
+      ...mapMutations( [ 'adicionarProduto' ] )
     }
   }
 </script>
