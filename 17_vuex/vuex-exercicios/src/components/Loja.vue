@@ -60,7 +60,7 @@
       // ...mapMutations( [ 'adicionarProduto' ] )
 
       // acesso ao Actions mapeada como this.methods
-      ...mapActions( [ 'adicionarProduto' ] ),
+      ...mapActions( 'carrinho', [ 'adicionarProduto' ] ),
       // q é a mesma coisa disso:
       // adicionarProduto( produto ) {
       //   this.$store.dispatch( 'adicionarProduto', produto )
