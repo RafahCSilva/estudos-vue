@@ -11,10 +11,13 @@
     <v-card>
       <v-container fill-height>
         <v-text-field label="Quantidade" type="number" v-model.number="quantity" />
-        <v-btn class="green darker-3 white--text"
-               @click="buyStock"
-               :disabled=" quantity <= 0 || !Number.isInteger( quantity ) "
-        >Comprar</v-btn>
+        <v-btn
+          class="green darker-3 white--text"
+          @click="buyStock"
+          :disabled=" quantity <= 0 || !Number.isInteger( quantity ) "
+        >
+          Comprar
+        </v-btn>
       </v-container>
     </v-card>
   </v-flex>
@@ -38,7 +41,7 @@
         }
         // eslint-disable-next-line
         console.log( order )
-        this.quantity=0
+        this.quantity = 0
       }
     },
   }
