@@ -50,6 +50,10 @@
         // this.$store.dispatch( 'adicionarProduto', produto )
         // acesso ao Actions mapeada como this.methods
         this.adicionarProduto( produto )
+
+        // Call Fragments
+        console.log( this.$store.getters.getNome )
+        console.log( this.$store.getters.getNomeCompleto )
       },
 
       // acesso ao Mutation mapeada como this.methods
