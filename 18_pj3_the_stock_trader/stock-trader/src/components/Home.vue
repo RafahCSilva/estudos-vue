@@ -14,7 +14,7 @@
       </span>
     </v-sheet>
     <v-divider class="my-4" />
-    <p class="display-1"><Strong>Seu Saldo:</Strong>{{ funds }}</p>
+    <p class="display-1"><Strong>Seu Saldo:</Strong>{{ funds | currency }}</p>
   </div>
 </template>
 
