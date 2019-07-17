@@ -1,14 +1,19 @@
 <template>
   <div id="app">
     <h1>Problema Monty Hall</h1>
+    <Gift/>
   </div>
 </template>
 
 <script>
 
+  import Gift from './components/Gift'
+
   export default {
-    name: 'app',
-    components: {}
+    name: 'App',
+    components: {
+      Gift
+    }
   }
 </script>
 
