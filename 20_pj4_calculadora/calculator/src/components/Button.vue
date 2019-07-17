@@ -2,6 +2,7 @@
   <button
     class="button"
     :class="{ double, triple, operation }"
+    @click=" $emit( 'onClick', label ) "
   >
     {{ label }}
   </button>
