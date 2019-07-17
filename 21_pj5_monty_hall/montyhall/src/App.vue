@@ -1,18 +1,17 @@
 <template>
   <div id="app">
     <h1>Problema Monty Hall</h1>
-    <Gift/>
+    <Door number="1" :has-gift="false" />
   </div>
 </template>
 
 <script>
-
-  import Gift from './components/Gift'
+  import Door from './components/Door'
 
   export default {
     name: 'App',
     components: {
-      Gift
+      Door
     }
   }
 </script>
