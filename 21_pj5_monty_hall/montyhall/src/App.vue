@@ -1,7 +1,26 @@
 <template>
   <div id="app">
     <h1>Problema Monty Hall</h1>
-    <Door number="1" :has-gift="false" />
+
+    <div class="form">
+      <div v-if="!started">
+        <label for="doorsAmount">Quantas portas? </label>
+        <input type="number" id="doorsAmount" size="3" v-model.number="doorsAmount">
+      </div>
+      <div v-if="!started">
+        <label for="selectedDoor">Qual a é porta premiada? </label>
+        <input type="number" id="selectedDoor" size="3" v-model.number="selectedDoor">
+      </div>
+
+      <button v-if="!started" @click=" started = true ">Iniciar</button>
+      <button v-if="started" @click=" started = false">Reiniciar</button>
+    </div>
+
+    <div class="doors" v-if="started">
+      <div v-for=" i in doorsAmount" :key="i">
+        <Door :number="i" :has-gift=" i === selectedDoor " />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -12,7 +31,13 @@
     name: 'App',
     components: {
       Door
-    }
+    }, data() {
+      return {
+        started: false,
+        doorsAmount: 3,
+        selectedDoor: 1
+      }
+    },
   }
 </script>
 
@@ -37,6 +62,28 @@
       background-color: #0004;
       padding: 20px;
       margin-bottom: 60px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+
+      font-size: 2rem;
+
+      input, button {
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+    }
+
+    .doors {
+      align-self: stretch;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
 </style>
