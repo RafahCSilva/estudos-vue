@@ -1,6 +1,9 @@
 <template>
   <div id="app" :class="{ 'hide-menu': !isMenuVisible }">
-    <Header title="RaFao - Base de Conhecimento" :hide-toggle="isMenuVisible" />
+    <Header
+      title="RaFao - Base de Conhecimento"
+      :hide-toggle="isMenuVisible"
+      :hide-user-dropdown="false" />
     <Menu />
     <Conteudo />
     <Footer />
