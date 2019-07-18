@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/22_pj6_knowledge/frontend" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/22_pj6_knowledge/frontend/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/01_intro" />
+      <excludeFolder url="file://$MODULE_DIR$/02_dom" />
+      <excludeFolder url="file://$MODULE_DIR$/03_cond_e_list" />
+      <excludeFolder url="file://$MODULE_DIR$/04_pj1_o_matador_de_monstros" />
+      <excludeFolder url="file://$MODULE_DIR$/05_instancia_vue" />
+      <excludeFolder url="file://$MODULE_DIR$/06_vue_cli" />
+      <excludeFolder url="file://$MODULE_DIR$/07_componentes" />
+      <excludeFolder url="file://$MODULE_DIR$/08_comunicacao_componentes" />
+      <excludeFolder url="file://$MODULE_DIR$/09_componentes_avancado" />
+      <excludeFolder url="file://$MODULE_DIR$/10_pj2_tarefas_todo" />
+      <excludeFolder url="file://$MODULE_DIR$/11_formularios" />
+      <excludeFolder url="file://$MODULE_DIR$/12_diretivas" />
+      <excludeFolder url="file://$MODULE_DIR$/13_filtros_mixins" />
+      <excludeFolder url="file://$MODULE_DIR$/14_animacao_transicao" />
+      <excludeFolder url="file://$MODULE_DIR$/15_http" />
+      <excludeFolder url="file://$MODULE_DIR$/16_rotas" />
+      <excludeFolder url="file://$MODULE_DIR$/17_vuex" />
+      <excludeFolder url="file://$MODULE_DIR$/18_pj3_the_stock_trader" />
+      <excludeFolder url="file://$MODULE_DIR$/20_pj4_calculadora" />
+      <excludeFolder url="file://$MODULE_DIR$/21_pj5_monty_hall" />
+      <excludeFolder url="file://$MODULE_DIR$/22_pj6_knowledge/backend_final" />
+      <excludeFolder url="file://$MODULE_DIR$/22_pj6_knowledge/frontend_final" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="vue" level="application" />
