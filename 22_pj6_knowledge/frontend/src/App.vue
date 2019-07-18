@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <Header />
+  <div id="app" :class="{ 'hide-menu': !isMenuVisible }">
+    <Header title="RaFao - Base de Conhecimento" :hide-toggle="isMenuVisible" />
     <Menu />
     <Conteudo />
     <Footer />
@@ -8,6 +8,7 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex'
   import Header from './components/templates/Header'
   import Menu from './components/templates/Menu'
   import Conteudo from './components/templates/Conteudo'
@@ -20,7 +21,10 @@
       Menu,
       Conteudo,
       Footer
-    }
+    },
+    computed: {
+      ...mapState( [ 'isMenuVisible' ] ),
+    },
   }
 </script>
 

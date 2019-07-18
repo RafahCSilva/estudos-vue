@@ -1,12 +1,29 @@
 <template>
   <header class="header">
-
+    <a class="toggle" @click="toggleMenu">
+      <i class="fa fa-lg" :class="toggle_icon"></i>
+    </a>
+    <h1 class="title">{{ title }}</h1>
   </header>
 </template>
 
 <script>
   export default {
-    name: 'Header'
+    name: 'Header',
+    props: {
+      title: String,
+      hideToggle: Boolean
+    },
+    computed: {
+      toggle_icon() {
+        return this.hideToggle ? 'fa-angle-left' : 'fa-angle-right'
+      }
+    },
+    methods: {
+      toggleMenu() {
+        this.$store.commit( 'toggleMenu' )
+      }
+    },
   }
 </script>
 
