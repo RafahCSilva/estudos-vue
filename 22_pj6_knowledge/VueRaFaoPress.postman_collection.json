@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "1f6581d1-11b2-49e5-82a8-a5be6cff2d53",
+		"name": "Vue RaFaoPress",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Rafao\",\n\t\"email\":\"rafao@rafao.com\",\n\t\"password\":\"123456\",\n\t\"confirmPassword\":\"123456\",\n\t\"admin\":\"true\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"rafao@rafao.com\",\n\t\"password\":\"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	}
+}

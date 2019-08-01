@@ -105,6 +105,14 @@ Reloading back-end enquanto estiver rodando
 rs
 ````
 
+## TD-TL para RUN Back-end
+````bash
+cd ..DIR../backend_final
+postgres -D /usr/local/var/postgres
+mongo
+npm start
+````
+
 ## Instalando o Front-end FINAL
 
 ````bash
@@ -119,4 +127,31 @@ npm run serve -- --port 8081
 cd 22_pj6_knowledge/frontend_final/
 npm i
 npm run serve
+````
+
+## Token
+### Cadastro
+````bash
+curl -X POST \
+  http://localhost:4000/signup \
+  -H 'Content-Type: application/json' \
+  -d '{
+	"name":"Rafao",
+	"email":"rafao@rafao.com",
+	"password":"123456",
+	"confirmPassword":"123456",
+	"admin":"true"
+}'
+````
+
+### Login
+````bash
+curl -X POST \
+  http://localhost:4000/signin \
+  -H 'Content-Type: application/json' \
+  -H 'content-length: 52' \
+  -d '{
+	"email":"rafao@rafao.com",
+	"password":"123456"
+}'
 ````
