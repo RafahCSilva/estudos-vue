@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da9a74a-96c2-4f4d-a38e-cb089417bdaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/home/Stat.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/rafaelcardoso.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/rafaelcardoso.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vue-js-completo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-js-completo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/AdminPages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/AdminPages.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/global.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/templates/PageTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/templates/PageTitle.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,9 +83,10 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/22_pj6_knowledge/backend_final" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -92,23 +96,23 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v10.16.0/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="zielu.svntoolbox.prj.config" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/22_pj6_knowledge" />
-      <recent name="$PROJECT_DIR$/14_animacao_transicao/animacoes-exercicios/src" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/07_componentes/componente-desafio/src/main" />
-      <recent name="$PROJECT_DIR$/07_componentes/componente-desafio/src/componentes/widgets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin" />
       <recent name="$PROJECT_DIR$/22_pj6_knowledge/backend_final" />
       <recent name="$PROJECT_DIR$/16_rotas/rotas-exercicios/src/components/template" />
       <recent name="$PROJECT_DIR$/07_componentes" />
       <recent name="$PROJECT_DIR$/03_cond_e_list" />
-      <recent name="$PROJECT_DIR$/02_dom" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/22_pj6_knowledge/frontend/src" />
+      <recent name="$PROJECT_DIR$/22_pj6_knowledge" />
+      <recent name="$PROJECT_DIR$/14_animacao_transicao/animacoes-exercicios/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/07_componentes/componente-desafio/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,7 +163,9 @@
       <workItem from="1562950980288" duration="7055000" />
       <workItem from="1563372141872" duration="16589000" />
       <workItem from="1563469873509" duration="13581000" />
-      <workItem from="1564692397402" duration="5193000" />
+      <workItem from="1564692397402" duration="5565000" />
+      <workItem from="1567103040455" duration="17000" />
+      <workItem from="1567103487413" duration="4901000" />
     </task>
     <servers />
   </component>
@@ -180,7 +186,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

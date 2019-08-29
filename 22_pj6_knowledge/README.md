@@ -107,10 +107,9 @@ rs
 
 ## TD-TL para RUN Back-end
 ````bash
-cd ..DIR../backend_final
-postgres -D /usr/local/var/postgres
-mongo
-npm start
+cd ~/www/vue-js-completo/22_pj6_knowledge/backend_final && postgres -D /usr/local/var/postgres
+cd ~/www/vue-js-completo/22_pj6_knowledge/backend_final && mongod
+cd ~/www/vue-js-completo/22_pj6_knowledge/backend_final && npm start
 ````
 
 ## Instalando o Front-end FINAL

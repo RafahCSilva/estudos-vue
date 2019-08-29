@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="LaraTeste">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cadaris.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cronenberg.test">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cybertron">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="digital.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="engines.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="localhost">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="loja.test">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="medea.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="metharia.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pern.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="phpStormCadaris.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="svg2abb.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="terra.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="textr.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vulcano.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/22_pj6_knowledge/frontend/node_modules" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
