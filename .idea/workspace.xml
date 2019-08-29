@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da9a74a-96c2-4f4d-a38e-cb089417bdaf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/config/msgs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/rafaelcardoso.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/rafaelcardoso.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vue-js-completo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-js-completo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/AdminPages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/AdminPages.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/home/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/templates/PageTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/templates/PageTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/UserAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/UserAdmin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +43,8 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -96,7 +92,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v10.16.0/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="zielu.svntoolbox.prj.config" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -165,7 +161,7 @@
       <workItem from="1563469873509" duration="13581000" />
       <workItem from="1564692397402" duration="5565000" />
       <workItem from="1567103040455" duration="17000" />
-      <workItem from="1567103487413" duration="4901000" />
+      <workItem from="1567103487413" duration="5698000" />
     </task>
     <servers />
   </component>
