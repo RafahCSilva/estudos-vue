@@ -5,10 +5,10 @@ Vue.use( Vuex )
 
 export const store = new Vuex.Store( {
   state: {
-    isMenuVisible: true,
-    user:{
+    isMenuVisible: false, // default do menu visivel
+    user: {
       name: 'Rafao CS',
-      email:'rcs@rcs.com'
+      email: 'rcs@rcs.com'
     }
   },
   mutations: {
