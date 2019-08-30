@@ -37,7 +37,7 @@ module.exports = app => {
     try {
       const rowsDeleted = await app
         .db( 'articles' )
-                                   .where( { id: req.params.id } ).del()
+        .where( { id: req.params.id } ).del()
 
       try {
         existsOrError( rowsDeleted, 'Artigo não foi encontrado.' )
@@ -51,7 +51,7 @@ module.exports = app => {
     }
   }
 
-  const limit = 10 // usado para paginação
+  const limit = 3 // usado para paginação
   const get = async ( req, res ) => {
     const page = req.query.page || 1
 

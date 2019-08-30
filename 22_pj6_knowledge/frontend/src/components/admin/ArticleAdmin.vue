@@ -114,6 +114,11 @@
           </b-button>
         </template>
       </b-table>
+      <b-pagination
+        size="md"
+        v-model="page"
+        :total-rows="count"
+        :per-page="limit" />
     </b-form>
   </div>
 </template>
@@ -204,12 +209,17 @@
       },
       loadArticles() {
         axios
-          .get( `${ baseApiUrl }/articles` )
+          .get( `${ baseApiUrl }/articles?page=${ this.page }` )
           .then( resp => {
             this.articles = resp.data.data
             this.count = resp.data.count
             this.limit = resp.data.limit
           } )
+      }
+    },
+    watch: {
+      page( newPage, oldPage ) {
+        this.loadArticles()
       }
     },
   }
