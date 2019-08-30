@@ -118,18 +118,24 @@ cd ~/www/vue-js-completo/22_pj6_knowledge/backend_final && npm start
 cd 22_pj6_knowledge/frontend_final/
 npm i
 npm run serve -- --port 8081
+
+# TD-TL
+cd  ~/www/vue-js-completo/22_pj6_knowledge/frontend_final/ && npm run serve -- --port 8081
 ````
 
 ## Instalando o Front-end a ser programado
 
 ````bash
-cd 22_pj6_knowledge/frontend_final/
+cd 22_pj6_knowledge/frontend/
 npm i
 npm run serve
+ 
+# TD-TL
+cd  ~/www/vue-js-completo/22_pj6_knowledge/frontend/ && npm run serve
 ````
 
 ## Token
-### Cadastro
+### Cadastro (cola no terminal com tab mesmo)
 ````bash
 curl -X POST \
   http://localhost:4000/signup \
@@ -143,7 +149,7 @@ curl -X POST \
 }'
 ````
 
-### Login
+### Login (cola no terminal com tab mesmo)
 ````bash
 curl -X POST \
   http://localhost:4000/signin \
