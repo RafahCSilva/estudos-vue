@@ -42,7 +42,7 @@
       </b-row>
     </b-form>
     <hr>
-    <b-table hover stroped :items="categories" :fields="fields">
+    <b-table hover striped :items="categories" :fields="fields">
       <template slot="actions" slot-scope="data">
         <b-button variant="warning" size="sm" @click="loadCategory(data.item)" class="mr-2">
           <i class="fa fa-pencil"></i>
