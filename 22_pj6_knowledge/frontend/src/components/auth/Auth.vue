@@ -51,7 +51,6 @@
         axios
           .post( `${ baseApiUrl }/signup`, this.user )
           .then( res => {
-            console.log(res )
             this.$toasted.global.defaultSuccess()
             this.user = {}
             this.showSingUp = false
