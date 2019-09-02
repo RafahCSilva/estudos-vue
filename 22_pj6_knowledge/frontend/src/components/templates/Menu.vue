@@ -1,17 +1,55 @@
 <template>
   <aside class="menu" v-show="isMenuVisible">
-
+    <div class="menu-filter">
+      <i class="fa fa-search fa-lg"></i>
+      <input type="text" placeholder="Digite para filtrar..." v-model="treeFilter" class="filter-field">
+    </div>
+    <Tree
+      :data="treeData"
+      :options="treeOptions"
+      :filter="treeFilter"
+      ref="tree" />
   </aside>
 </template>
 
 <script>
   import { mapState } from 'vuex'
+  import Tree from 'liquor-tree'
+  import axios from 'axios'
+  import { baseApiUrl } from '@/global'
 
   export default {
     name: 'Menu',
+    components: { Tree },
     computed: {
       ...mapState( [ 'isMenuVisible' ] )
     },
+    data() {
+      return {
+        treeFilter: '',
+        treeData: this.getTreeData(),
+        treeOptions: {
+          propertyNames: { 'text': 'name' },
+          filter: { emptyText: 'Categoria não encontrada' }
+        }
+      }
+    },
+    methods: {
+      getTreeData() {
+        return axios
+          .get( `${ baseApiUrl }/categories/tree` )
+          .then( res => res.data )
+      },
+      onNodeSelect( node ) {
+        this.$router.push( {
+          name: 'articleByCategory',
+          params: { id: node.id }
+        } )
+      }
+    },
+    mounted() {
+      this.$refs.tree.$on( 'node:selected', this.onNodeSelect )
+    }
   }
 </script>
 
@@ -35,7 +73,11 @@
     }
 
     .tree-node {
-      &.selected > .tree-content, .tree-content:hover {
+      &.selected > .tree-content {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .tree-content:hover {
         background-color: rgba(255, 255, 255, 0.2);
       }
     }

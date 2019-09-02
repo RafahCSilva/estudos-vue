@@ -5,7 +5,7 @@ Vue.use( Vuex )
 
 export const store = new Vuex.Store( {
   state: {
-    isMenuVisible: false, // default do menu visivel
+    isMenuVisible: true, // default do menu visivel
     user: {
       name: 'Rafao CS',
       email: 'rcs@rcs.com'

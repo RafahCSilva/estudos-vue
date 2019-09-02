@@ -7,7 +7,7 @@
 
     <ul>
       <li v-for="article in articles" :key="article.id">
-        <ArticleItem :article="article"/>
+        <ArticleItem :article="article" />
       </li>
     </ul>
 
@@ -65,7 +65,17 @@
       this.category.id = this.$route.params.id
       this.getCategory()
       this.getArticles()
-    }
+    },
+    watch: {
+      $route( to ) {
+        this.category.id = to.params.id
+        this.articles = []
+        this.page = 1
+        this.loadMore = true
+        this.getCategory()
+        this.getArticles()
+      }
+    },
   }
 </script>
 

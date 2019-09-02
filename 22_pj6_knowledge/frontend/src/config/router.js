@@ -8,10 +8,10 @@ import ArticleById from '@/components/article/ArticleById'
 Vue.use( VueRouter )
 
 const routes = [
-  { nome: 'home', path: '/', component: Home },
-  { nome: 'adminPages', path: '/admin', component: AdminPages },
-  { nome: 'articleByCategory', path: '/categories/:id/articles', component: ArticlesByCategory },
-  { nome: 'articleById', path: '/articles/:id', component: ArticleById }
+  { name: 'home', path: '/', component: Home },
+  { name: 'adminPages', path: '/admin', component: AdminPages },
+  { name: 'articleByCategory', path: '/categories/:id/articles', component: ArticlesByCategory },
+  { name: 'articleById', path: '/articles/:id', component: ArticleById }
 ]
 
 export default new VueRouter( {
