@@ -9,7 +9,7 @@
     </div>
     <div class="user-dropdown-content">
       <router-link to="/admin"><i class="fa fa-cog"></i> Administração</router-link>
-      <a><i class="fa fa-sign-out"></i> Sair</a>
+      <a @click.prevent="logout"><i class="fa fa-sign-out"></i> Sair</a>
     </div>
   </div>
 </template>
@@ -17,6 +17,7 @@
 <script>
   import Gravatar from 'vue-gravatar'
   import { mapState } from 'vuex'
+  import { userKey } from '@/global'
 
   export default {
     name: 'UserDropdown',
@@ -25,6 +26,13 @@
     },
     computed: {
       ...mapState( [ 'user' ] )
+    },
+    methods: {
+      logout() {
+        localStorage.removeItem( userKey )
+        this.$store.commit( 'setUser', null )
+        this.$router.push( { name: 'auth' } )
+      }
     },
   }
 </script>

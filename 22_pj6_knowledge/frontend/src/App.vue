@@ -1,10 +1,10 @@
 <template>
-  <div id="app" :class="{ 'hide-menu': !isMenuVisible }">
+  <div id="app" :class="{ 'hide-menu': !isMenuVisible || !user }">
     <Header
       title="RaFaoPress"
-      :hide-toggle="isMenuVisible"
-      :hide-user-dropdown="false" />
-    <Menu />
+      :hide-toggle="!user"
+      :hide-user-dropdown="!user" />
+    <Menu v-if="user"/>
     <Conteudo />
     <Footer />
   </div>
@@ -26,7 +26,7 @@
       Footer
     },
     computed: {
-      ...mapState( [ 'isMenuVisible' ] ),
+      ...mapState( [ 'isMenuVisible', 'user' ] ),
     },
   }
 </script>

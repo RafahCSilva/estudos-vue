@@ -1,5 +1,6 @@
 import Vue from 'vue'
 
+export const userKey = '__user_logged'
 export const baseApiUrl = 'http://localhost:4000'
 
 export function showError( error ) {
