@@ -56,6 +56,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   import { baseApiUrl, showError } from '@/global'
   import axios from 'axios'
 

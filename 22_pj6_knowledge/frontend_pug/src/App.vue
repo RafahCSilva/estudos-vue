@@ -1,14 +1,16 @@
-<template>
-  <div id="app" :class="{ 'hide-menu': !isMenuVisible || !user }">
-    <Header
+<template lang="pug">
+  #app(:class="{ 'hide-menu': !isMenuVisible || !user }")
+    Header(
       title="RaFaoPress"
       :hide-toggle="!user"
-      :hide-user-dropdown="!user" />
-    <Menu v-if="user" />
-    <Loading v-if="validatingToken"/>
-    <Conteudo v-else/>
-    <Footer />
-  </div>
+      :hide-user-dropdown="!user"
+    )
+    Menu(v-if="user")
+
+    Loading(v-if="validatingToken")
+    Conteudo(v-else)
+
+    Footer
 </template>
 
 <script>
@@ -18,8 +20,8 @@
   import Menu from './components/templates/Menu'
   import Conteudo from './components/templates/Conteudo'
   import Footer from './components/templates/Footer'
-  import { baseApiUrl, userKey } from '@/global'
-  import Loading from '@/components/templates/Loading'
+  import { baseApiUrl, userKey } from './global'
+  import Loading from './components/templates/Loading'
 
   export default {
     name: 'App',

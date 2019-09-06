@@ -1,7 +1,6 @@
-<template>
-  <div class="loading">
-    <img src="@/assets/loading.gif" alt="Loading" />
-  </div>
+<template lang="pug">
+  .loading
+    img(src="@/assets/loading.gif" alt="Loading")
 </template>
 
 <script>

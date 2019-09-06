@@ -9,6 +9,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   import 'highlightjs/styles/dracula.css'
   import hljs from 'highlightjs/highlight.pack.js'
   import PageTitle from '@/components/templates/PageTitle'

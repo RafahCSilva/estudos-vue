@@ -1,7 +1,6 @@
-<template>
-  <div class="content">
-    <router-view></router-view>
-  </div>
+<template lang="pug">
+  .content
+    router-view
 </template>
 
 <script>

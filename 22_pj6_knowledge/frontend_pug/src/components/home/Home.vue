@@ -1,16 +1,14 @@
-<template>
-  <div class="home">
-    <PageTitle
+<template lang="pug">
+  .home
+    PageTitle(
       icon="fa fa-home"
       main="Dashboard"
-      sub="RaFaoPress" />
-    <div class="stats">
-      <Stat title="Categorias" :value="stat.categories" icon="fa fa-folder" color="#d54d50" />
-      <Stat title="Artigos" :value="stat.articles" icon="fa fa-file" color="#3bc480" />
-      <Stat title="Usuários" :value="stat.users" icon="fa fa-user" color="#3282cd" />
-    </div>
-  </div>
-
+      sub="RaFaoPress"
+    )
+    .stats
+      Stat(title="Categorias" :value="stat.categories" icon="fa fa-folder" color="#d54d50")
+      Stat(title="Artigos"    :value="stat.articles"   icon="fa fa-file"   color="#3bc480")
+      Stat(title="Usuários"   :value="stat.users"      icon="fa fa-user"   color="#3282cd")
 </template>
 
 <script>

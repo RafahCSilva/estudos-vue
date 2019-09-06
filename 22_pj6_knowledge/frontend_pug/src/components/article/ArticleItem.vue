@@ -27,6 +27,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   export default {
     name: 'ArticleItem',
     props: [ 'article' ]

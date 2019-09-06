@@ -1,12 +1,21 @@
-<template>
+<template lang="pug">
+  .page-title
+    h1
+      i(v-if="icon" :class="icon")
+      | {{ main }}
+    h2 {{ sub }}
+    hr
+</template>
+
+<script>
+  // eslint-disable-next-line
+  let html_bkp = `
   <div class="page-title">
     <h1><i v-if="icon" :class="icon"></i> {{ main }}</h1>
     <h2>{{ sub }}</h2>
     <hr>
-  </div>
-</template>
+  </div>`
 
-<script>
   export default {
     name: 'PageTitle',
     props: [ 'main', 'icon', 'sub' ],

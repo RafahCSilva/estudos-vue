@@ -23,6 +23,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   import PageTitle from '@/components/templates/PageTitle'
   import { baseApiUrl, showError } from '@/global'
   import axios from 'axios'

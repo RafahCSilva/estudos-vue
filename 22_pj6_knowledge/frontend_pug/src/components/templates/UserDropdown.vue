@@ -15,6 +15,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   import Gravatar from 'vue-gravatar'
   import { mapState } from 'vuex'
   import { userKey } from '@/global'

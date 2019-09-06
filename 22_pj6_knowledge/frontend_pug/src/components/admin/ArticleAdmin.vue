@@ -124,6 +124,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   import { VueEditor } from 'vue2-editor'
   import { baseApiUrl, showError } from '@/global'
   import axios from 'axios'
@@ -218,7 +221,7 @@
       }
     },
     watch: {
-      page( newPage, oldPage ) {
+      page( /*newPage, oldPage*/ ) {
         this.loadArticles()
       }
     },

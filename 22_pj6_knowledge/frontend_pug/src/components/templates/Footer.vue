@@ -1,7 +1,8 @@
-<template>
-  <footer class="footer">
-    <span>by <strong>RaFao</strong></span>
-  </footer>
+<template lang="pug">
+  footer.footer
+    span
+      | by
+      strong RaFao
 </template>
 
 <script>

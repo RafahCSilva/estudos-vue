@@ -1,13 +1,10 @@
-<template>
-  <div class="stat">
-    <div class="stat-icon">
-      <i :class="icon" :style="style"></i>
-    </div>
-    <div class="stat-info">
-      <span class="stat-title">{{ title }}</span>
-      <span class="stat-value">{{ value }}</span>
-    </div>
-  </div>
+<template lang="pug">
+  .stat
+    .stat-icon
+      i(:class="icon" :style="style")
+    .stat-info
+      span.stat-title {{ title }}
+      span.stat-value {{ value }}
 </template>
 
 <script>

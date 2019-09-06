@@ -24,6 +24,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   import { baseApiUrl, showError, userKey } from '@/global'
   import axios from 'axios'
 
@@ -50,7 +53,7 @@
       signUp() {
         axios
           .post( `${ baseApiUrl }/signup`, this.user )
-          .then( res => {
+          .then( () => {
             this.$toasted.global.defaultSuccess()
             this.user = {}
             this.showSingUp = false

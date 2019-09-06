@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da9a74a-96c2-4f4d-a38e-cb089417bdaf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vue-js-completo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue-js-completo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/AdminPages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/AdminPages.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/ArticleAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/ArticleAdmin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/CategoryAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/CategoryAdmin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/UserAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/admin/UserAdmin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/article/ArticleById.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/article/ArticleById.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/article/ArticleItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/article/ArticleItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/article/ArticlesByCategory.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/article/ArticlesByCategory.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/auth/Auth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/auth/Auth.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/home/Stat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/home/Stat.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Conteudo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Conteudo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Loading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Loading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/Menu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/PageTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/PageTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/UserDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend_pug/src/components/templates/UserDropdown.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,23 +105,23 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v10.16.0/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin" />
-      <recent name="$PROJECT_DIR$/22_pj6_knowledge/backend_final" />
-      <recent name="$PROJECT_DIR$/16_rotas/rotas-exercicios/src/components/template" />
-      <recent name="$PROJECT_DIR$/07_componentes" />
-      <recent name="$PROJECT_DIR$/03_cond_e_list" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/22_pj6_knowledge/frontend/src" />
       <recent name="$PROJECT_DIR$/22_pj6_knowledge" />
       <recent name="$PROJECT_DIR$/14_animacao_transicao/animacoes-exercicios/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/07_componentes/componente-desafio/src/main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin" />
+      <recent name="$PROJECT_DIR$/22_pj6_knowledge/backend_final" />
+      <recent name="$PROJECT_DIR$/16_rotas/rotas-exercicios/src/components/template" />
+      <recent name="$PROJECT_DIR$/07_componentes" />
+      <recent name="$PROJECT_DIR$/03_cond_e_list" />
     </key>
   </component>
   <component name="RunDashboard">

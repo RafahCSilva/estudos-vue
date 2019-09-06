@@ -1,15 +1,18 @@
-<template>
-  <aside class="menu" v-show="isMenuVisible">
-    <div class="menu-filter">
-      <i class="fa fa-search fa-lg"></i>
-      <input type="text" placeholder="Digite para filtrar..." v-model="treeFilter" class="filter-field">
-    </div>
-    <Tree
+<template lang="pug">
+  aside.menu(v-show="isMenuVisible")
+    .menu-filter
+      i.fa.fa-search.fa-lg
+      input.filter-field(
+        type="text"
+        placeholder="Digite para filtrar..."
+        v-model="treeFilter"
+      )
+    Tree(
       :data="treeData"
       :options="treeOptions"
       :filter="treeFilter"
-      ref="tree" />
-  </aside>
+      ref="tree"
+    )
 </template>
 
 <script>

@@ -24,6 +24,9 @@
 </template>
 
 <script>
+  // eslint-disable-next-line
+  let html_bkp = ``
+
   import PageTitle from '@/components/templates/PageTitle'
   import ArticleAdmin from '@/components/admin/ArticleAdmin'
   import CategoryAdmin from '@/components/admin/CategoryAdmin'
