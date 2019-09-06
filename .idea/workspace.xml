@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2da9a74a-96c2-4f4d-a38e-cb089417bdaf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/UserAdmin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin/UserAdmin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/config/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/config/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +60,6 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/20_pj4_calculadora/calculator/package.json" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1200" />
-  </component>
   <component name="ProjectId" id="1Oq5gK5tweLjdZXTyYMtLWxKpCf" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -73,13 +67,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/22_pj6_knowledge/frontend/src/components/admin" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/22_pj6_knowledge" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -89,7 +83,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v10.16.0/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -158,7 +152,14 @@
       <workItem from="1563469873509" duration="13581000" />
       <workItem from="1564692397402" duration="5565000" />
       <workItem from="1567103040455" duration="17000" />
-      <workItem from="1567103487413" duration="7883000" />
+      <workItem from="1567103487413" duration="8273000" />
+      <workItem from="1567174790943" duration="29000" />
+      <workItem from="1567192445091" duration="11052000" />
+      <workItem from="1567204126466" duration="1946000" />
+      <workItem from="1567460953536" duration="7810000" />
+      <workItem from="1567540441289" duration="425000" />
+      <workItem from="1567720623840" duration="46000" />
+      <workItem from="1567720686907" duration="135000" />
     </task>
     <servers />
   </component>
