@@ -28,9 +28,11 @@
       <excludeFolder url="file://$MODULE_DIR$/22_pj6_knowledge/frontend" />
       <excludeFolder url="file://$MODULE_DIR$/22_pj6_knowledge/frontend/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/22_pj6_knowledge/frontend_final" />
+      <excludeFolder url="file://$MODULE_DIR$/22_pj6_knowledge/frontend_pug/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/24_css_grid_e_flex" />
     </content>
     <content url="file://$MODULE_DIR$/22_pj6_knowledge/frontend/node_modules" />
+    <content url="file://$MODULE_DIR$/22_pj6_knowledge/frontend_pug/node_modules" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="vue" level="application" />
